@@ -48,7 +48,7 @@ Git 可以对文档资料进行共享，管理及权限控制
 
 > 进入本地仓库
 >
-> 鼠标右键菜单选择 `Git 克隆`
+> 空白处鼠标右键菜单选择 `Git 克隆`
 >
 > 粘贴上一步复制的`SSH`
 >
@@ -64,8 +64,73 @@ Git 可以对文档资料进行共享，管理及权限控制
 
 > 进入本地仓库
 >
-> 鼠标右键菜单选择 `TortoiseGit`
+> 空白处鼠标右键菜单选择 `TortoiseGit`
 >
 > 点击 `拉取`
 
 ![从远程仓库拉取文件到本地仓库](https://i.loli.net/2021/11/04/4aCkux5TSOLzobm.png)
+
+
+
+* Git 从本地上传文件到远程仓库
+
+> 首先将需要上传的文件移动到本地仓库
+>
+> 空白处鼠标右键菜单选择 `TortoiseGit`
+>
+> 选择`添加`
+
+![image-20211104130053476](https://i.loli.net/2021/11/04/fHhEZSJx7Q9C51P.png)
+
+![image-20211104130212749](https://i.loli.net/2021/11/04/FWJmUiBbnKosqVG.png)
+
+![image-20211104130311089](https://i.loli.net/2021/11/04/WDfRa1QTbMNq6K5.png)
+
+![image-20211104130608133](https://i.loli.net/2021/11/04/6saHtXrJxjOz38p.png)
+
+> 点击 `提交`
+
+![image-20211104130713876](https://i.loli.net/2021/11/04/KcMQ68ausxJz1CS.png)
+
+> 点击 `推送`
+
+---
+
+* Git 删除文件
+
+> 首先在本地仓库将需要删除的文件 Delete
+>
+> 鼠标右键菜单选择 `Git 提交`
+>
+> 填写日志信息后点击 `提交并推送`
+
+![image-20211104134854475](https://i.loli.net/2021/11/04/FOCYUmrH7aRZebq.png)
+
+![image-20211104134905438](https://i.loli.net/2021/11/04/rjf8VcNdAew7EyS.png)
+
+
+
+* Git 还原
+
+*ps：前提是删除的文件未提交*
+
+> 空白处鼠标右键菜单选择 `TortoiseGit`
+>
+> 选择 `还原`
+
+![image-20211104135302156](https://i.loli.net/2021/11/04/CfkMnDIsm5iAlUd.png)
+
+> 选择需要还原的文件
+>
+> 点击 `确定`
+
+![image-20211104135556653](https://i.loli.net/2021/11/04/7srtLVhgJl25Oie.png)
+
+
+
+---
+
+##### 3.Git 与 SVN 的区别
+
+* SVN 版本集中管理，所有代码都在一天服务器上；分支和主线是不一样的URL地址路径
+* Git 分布式管理，去中心化，服务器和每个开发人员都拥有一个本地的代码管理仓库；分支和主线路径是一样的
